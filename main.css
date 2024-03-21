@@ -247,7 +247,7 @@ nav{
     letter-spacing: 2px;
     color: #000;
     text-transform: uppercase;
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -336,4 +336,792 @@ iframe{
     width: 100%;
     height: 100%;
     border-radius: 100%;
+}
+
+/* media query for section one */
+@media (min-width: 360px) and (max-width:460px){
+    .heroSection{
+        flex-direction: column-reverse;
+    }
+
+    .heroImgCont{
+        width: 100%;
+        margin-block: 2rem;
+    }
+
+    .video{
+        bottom: -6rem;
+        right: 35%;
+    }
+
+    .heroContent>h1{
+        margin-top: 7rem;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 2.7rem;
+    }
+
+    .heroContent>p{
+        width: 380px;
+        text-align: center;
+        margin-left: -6.8rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .btn_btn{
+        flex-direction: column;
+        gap: 0;
+        width: 200px;
+        margin: auto;
+    }
+
+    .btn_btn>button:first-child{
+        margin-top: -1.5rem;
+    }
+}
+
+/* styling for section two */
+.secTwo{
+    padding-inline: 2rem;
+    margin-top: 4rem;
+}
+
+.timeline{
+    border-top: 1px solid #e2dffd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeCard{
+    position: relative;
+}
+
+.timeCard>span{
+    z-index: 1;
+    background-color: #fff;
+    position: absolute;
+    top: -1rem;
+    color: #b3aaa2;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #e2dffd;
+    padding: .2rem 2rem;
+    border-radius: 4px;
+}
+
+.timeCard>h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    font-weight: 400;
+}
+
+.timeCard>p{
+    color: #a7a7a7;
+    font-size: 16px;
+}
+
+/* media query for section two */
+@media  (min-width: 360px) and  (max-width: 460px){
+    .timeline{
+        border-top: 0px;
+        flex-direction: column;
+    }
+
+    .timeCard{
+        margin-bottom: 4rem;
+    }
+
+    .timeCard>span{
+        right: 35%;
+    }
+
+    .timeCard>h2{
+        text-align: center;
+    }
+
+    .timeCard>p{
+        text-align: center;
+    }
+}
+
+/* styling for section  three */
+.secThree{
+    display: flex;
+    padding: 4rem 2rem;
+    margin-top: 10rem;
+    gap: 5rem;
+    background-color: #f5f1ef;
+}
+
+.coffeeImages{
+    margin-left: 2rem;
+    position: relative;
+}
+/* .coffeeImages>.barista>img{
+    margin-left: 4rem;
+} */
+.coffeeCup{
+    position: absolute;
+    top: 16rem;
+    left: -4rem;
+    /* border: 2px solid red; */
+}
+
+.coffeeCup>img{
+    width: 100%;
+}
+
+.aboutUs{
+    /* border: 2px solid blue; */
+    display: block;
+    width: 74vh;
+    margin-top: 70px;
+}
+.aboutUs>span{
+    background-color: #c7a17a;
+    padding: 4px 11px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 3px;
+    border-radius: 4px;
+}
+.aboutUs>h2{
+    font-size: 55px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    line-height: 57px;
+    margin-top: 23px;
+}
+.aboutUs>p{
+    margin-top: 25px;
+    font-size: 18px;
+    color: #a7a7a7;
+}
+
+/* media query for  section three */
+@media  (min-width: 360px) and  (max-width: 460px){
+    .secThree{
+        border-top: 0px;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        gap: 20rem;
+    }
+
+    .coffeeImages{
+       width: 330px;
+       margin-left: 0;
+       /* border: 2px solid blue; */
+    }
+
+    .barista{
+        width: 100%;
+    }
+    .barista>img{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .coffeeCup{
+        width: 60%;
+        left: 4rem;
+        top: 25rem;
+    }
+
+    .coffeeCup>img{
+        width: 100%;
+    }
+
+    .aboutUs>h2{
+        /* border: 2px solid red; */
+        font-size: 33px;
+        width: 60%;
+        line-height: 30px;
+    }
+
+    .aboutUs>p{
+        width: 63%;
+        font-size: 17px;
+    }
+
+}
+
+
+/* styling for section four */
+#secFour{
+    /* border: 2px solid red; */
+    display: block;
+    padding: 2rem 2rem;
+    margin-top: 1rem;
+    margin: auto;
+    background-color: #f5f1ef;
+}
+
+.cafenaNav{
+    display: block;    
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.subHeading>span{
+    background-color: #c7a17a;
+    padding: 4px 11px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 3px;
+    border-radius: 4px;
+}
+
+.subHeading>h2{
+    font-size: 55px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    line-height: 57px;
+    margin-top: 23px;
+}
+
+.popularNavBar{
+    display: flex;
+    gap: 8px;
+    /* border: 2px solid brown; */
+    width: 960px;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.popularNavBar>button{
+    color: #6c6c6c;
+    font-size: 15px;
+    /* margin: 10px 8px; */
+    padding: 5px 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    border-radius: 4px;
+}
+.popularNavBar>button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #c7a17a;
+}
+
+.menuPosts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+    padding-inline: 6.5rem;
+}
+
+.menuCard{
+    position: relative;
+    margin-bottom: 8.5rem;
+}
+.menuCard>img{
+    width: 336px;
+    height: 224px;
+    border-radius: 7px;
+}
+
+.menuCard>img:hover{
+    transform: scale(1.04);
+}
+
+.menuInfo{
+    width: 280px;
+    height: 180px;
+    position: absolute;
+    /* border: 2px solid blue; */
+    top: 10rem;
+    right: 55px;
+    border-radius: 7px;
+    background-color: #fff;
+}
+.menuInfo>h3{
+    margin-top: 2.3rem;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+.menuInfo>h3:hover{
+    cursor: pointer;
+}
+.menuInfo>p{
+    margin-top: .3rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+}
+.menuInfo>p>b{
+    font-weight: 500;
+}
+
+.menuIcons{
+    margin-top: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.menuIcons>i{
+    border: .5px solid #6c6c6c;
+    padding: 10px;
+    border-radius: 4px;
+    color: #6c6c6c;
+}
+.menuIcons>i:hover{
+    cursor: pointer;
+    color: #c7a17a;
+}
+
+/* media query for section four */
+@media  (min-width: 360px) and  (max-width: 460px){
+    #secFour{
+        margin-top: -5rem;
+    }
+
+    .subHeading>h2{
+        font-size: 35px;
+    }
+
+    .popularNavBar{
+        /* border: 2px solid blue; */
+        width: 380px;
+    }
+
+    .menuPosts{
+        display: grid;
+        grid-template-columns: none;
+        padding-inline: 0;
+    }
+
+    .menuCard>img{
+        width: 330px;
+    }
+    
+    .menuInfo{
+        right: 25px;
+    }
+}
+
+/* styling for section five */
+#secFive{
+    margin: block;
+    text-align: center;
+    /* margin-top: 8rem; */
+    background-color: black;
+    padding: 8rem 2rem;
+}
+
+.bio{
+    position: relative;
+}
+
+.bio>span{
+    background-color: #c7a17a;
+    padding: 4px 11px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 3px;
+    border-radius: 4px;
+}
+
+.bio>h2{
+    font-size: 55px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    line-height: 57px;
+    margin-top: 23px;
+    color: #fff;
+}
+
+.bio>i{
+    font-size: 60px;
+    margin-top: 23px;
+    color: #c7a17a;
+}
+
+.bio>p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 23px;
+    color: #fff;
+}
+
+.left>a{
+    position: absolute;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 1rem;
+    margin-top: -70px;
+}
+.left>a:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #c7a17a;
+    border: #fff;
+}
+.left>a>i{
+    color: #fff;
+    position: absolute;
+}
+
+.right>a{
+    position: absolute;
+    right: 0;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 1rem;
+    margin-top: -70px;
+}
+.right>a:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #c7a17a;
+    border: #fff;
+}
+.right>a>i{
+    position: absolute;
+    color: #fff;
+}
+
+.creatorInfo>img{
+    margin-top: 23px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.creatorInfo>p{
+    margin-top: 23px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #fff;
+}
+.creatorInfo>span{
+    margin-top: 13px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #c7a17a;
+}
+
+/* media query for section five */
+@media  (min-width: 360px) and  (max-width: 460px){
+    .bio>h2{
+        font-size: 35px;
+    }
+    
+    .right>a{
+        bottom: -15rem;
+        left: 11rem;
+        width: 45px;
+        height: 45px;
+    }
+    .right>a>i{
+        bottom: 13px;
+        left: 15px;
+    }
+    .left>a{
+        bottom: -15rem;
+        left: 7rem;
+        width: 45px;
+        height: 45px;
+    }
+    .left>a>i{
+        bottom: 13px;
+        left: 13px;
+    }
+}
+
+/* styling of section six */
+#secSix{
+    margin: block;
+    text-align: center;
+    /* margin-top: 8rem; */
+    background-color: #f5f1ef;
+    padding: 5rem 2rem;
+}
+
+.title>span{
+    background-color: #c7a17a;
+    padding: 4px 11px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 3px;
+    border-radius: 4px;
+}
+
+.title>h2{
+    font-size: 55px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    line-height: 57px;
+    margin-top: 23px;
+    color: #000;
+}
+
+.theBeans{
+    display: flex;
+    position: relative;
+    padding-inline: 5rem;
+
+}
+
+.coffeeTypes{
+    text-align: center;
+    margin: auto;
+    padding: 3rem;
+    /* border: 2px solid red; */
+}
+
+.coffeeTypes>img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-bottom: .9rem;
+}
+.coffeeTypes>h3{
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+.coffeeTypes>p{
+    font-size: 16px;
+    color: #6c6c6c;
+}
+
+/* media query for section 6 */
+@media  (min-width: 360px) and  (max-width: 460px){
+    .title>h2{
+        font-size: 35px;
+    }
+
+    .theBeans{
+        flex-direction: column;
+        padding-inline: 0;
+    }
+}
+
+/* styling for section seven */
+
+#secSeven{
+    /* border: 2px solid red; */
+    margin: block;
+    padding: 6rem 8rem;
+}
+
+.blogHeading>span{
+    background-color: #c7a17a;
+    padding: 4px 11px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 3px;
+    border-radius: 4px;
+}
+
+.blogTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blogTitle>h2{
+    font-size: 55px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    line-height: 57px;
+    margin-top: 23px;
+    color: #000;
+}
+.blogTitle>a{
+    font-size: 12px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #c7a17a;
+    padding: 15px 34px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #c7a17a;
+    font-weight: 500;
+}
+.blogTitle>a:hover{
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+}
+
+.blogCards{
+    display: flex;
+    gap: 30px;
+}
+
+.blogInfo{
+    margin-top: 3rem;
+    /* border: 2px solid blue; */
+}
+
+.blogInfo>img{
+    width: 345px;
+    height: 240px;
+    border-radius: 7px;
+}
+.blogInfo>p{
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 29px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+.blogInfo>p>span{
+    font-size: 14px;
+    color: #6c6c6c;
+    font-weight: 500;
+}
+.blogInfo>a{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+    line-height: 29px;
+    text-align: center;
+}
+
+.readMore{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+.readMore>a{
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #6c6c6c;
+    padding: 15px;
+}
+.readMore>a:hover{
+    cursor: pointer;
+    color: #c7a17a;
+}
+.readMore>i{
+    color: #6c6c6c;
+}
+.readMore>i:hover{
+    cursor: pointer;
+    color: #c7a17a;
+}
+
+/* media query for section seven */
+@media  (min-width: 360px) and  (max-width: 460px){
+    #secSeven{
+        padding: 1.5rem;
+    }
+    
+    .blogHeading>span{
+        margin-left: 6.5rem;
+    }
+    .blogTitle{
+        flex-direction: column;
+    }
+
+    .blogTitle>h2{
+        font-size: 35px;
+        width: 330px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .blogTitle>a{
+        margin-top: 5px;
+        width: 170px;
+    }
+    
+    .blogCards{
+        flex-direction: column;
+        width: 330px;
+    }
+}
+
+
+/* styling for footer */
+#footer{
+    /* margin: block; */
+    background-color: black;
+    padding: 8rem 8rem;
+}
+
+.contactDetails{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+.contactDetails>p{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.contactDetails>p>span{
+    color: #a7a7a7;
+}
+
+.otherInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 4rem;
+    border: 2px solid blue;
+}
+
+.footerIcons{
+    display: flex;
+    gap: 7px;
+    color: #6c6c6c;
+    border: 2px solid red;
+}
+
+.footerIcons>a{
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    color: #000;
+    opacity: .7;
+    padding-inline: .5rem;
+    padding-bottom: .2rem;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.footerIcons>a>i{
+    padding: .6rem .1rem;
+    font-size: 16px;
+    color: #6c6c6c;
+}
+
+
+
+
+/* media query for footer */
+
+@media  (min-width: 360px) and  (max-width: 460px){
+    
 }
